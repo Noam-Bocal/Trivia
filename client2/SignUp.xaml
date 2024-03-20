@@ -1,0 +1,28 @@
+﻿<Window x:Class="client2.SignUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client2"
+        mc:Ignorable="d"
+        Title="SignUp" Height="800" Width="800">
+    <Canvas Background="LightBlue">
+        <TextBlock Text="Username:" FontSize="48"  Canvas.Left="120" Canvas.Top="117" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MV Boli" />
+        <TextBlock Text="Password:" FontSize="48"  Canvas.Left="120" Canvas.Top="320" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MV Boli" />
+        <PasswordBox x:Name="PasswordBox" Width="247" Height="63" Canvas.Left="370" Canvas.Top="329" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="MV Boli" />
+        <Button Content="Sign Up" Width="132" Height="83" Background="Lavender" Foreground="Black"
+                Canvas.Bottom="322" Canvas.Top="329" Click="Signup_Click" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" RenderTransformOrigin="0.485,1.314" Canvas.Left="652" />
+        <TextBlock x:Name="ErrorMessage" Text="" Foreground="Red" FontSize="16"
+                   Canvas.Left="30" Canvas.Top="320" />
+        <Button Content="Back" Width="97" Height="37" Background="Lavender" Foreground="Black"
+                Canvas.Right="20" Canvas.Top="10" Click="Back_Click" RenderTransformOrigin="-1.467,0.135" Canvas.Left="10" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="MV Boli"/>
+        <TextBox x:Name="userNameBox" Width="247" Height="63" FontFamily="MV Boli" Canvas.Left="370" Canvas.Top="118" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBlock FontSize="48" Canvas.Left="120" Canvas.Top="513" FontFamily="MV Boli" HorizontalAlignment="Center" VerticalAlignment="Top" Height="81" ><Run Text="Email:"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="emailBox" Width="247" Height="63" FontFamily="MV Boli" Canvas.Left="370" Canvas.Top="513" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <Ellipse Width="70" Height="70" Fill="#6A0DAD" Stroke="White" StrokeThickness="3"
+                 Canvas.Left="683" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Text="Trivia" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Canvas.Left="692" Canvas.Top="10" VerticalAlignment="Top" />
+        <TextBlock Text="Mater?" FontSize="15" Foreground="White" HorizontalAlignment="Left" Canvas.Left="696" Canvas.Top="35" VerticalAlignment="Top" />
+    </Canvas>
+</Window>

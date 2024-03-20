@@ -1,0 +1,44 @@
+﻿<Window x:Class="client2.CreateRoom"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:client2"
+        mc:Ignorable="d"
+        Title="CreateRoom" Height="800" Width="800">
+    <Canvas Background="LightBlue">
+        <Canvas.Resources>
+            <VisualBrush x:Key="QuestionMarkBrush"
+                         AlignmentX="Left" AlignmentY="Top"
+                         TileMode="Tile">
+                <VisualBrush.Visual>
+                    <TextBlock Text="?"
+                               FontSize="100"
+                               Foreground="#FFFFFF" />
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Canvas.Resources>
+        <Rectangle Width="800" Height="774" Fill="{StaticResource QuestionMarkBrush}" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Label x:Name="usernameLabel" Foreground="Black" FontSize="20" FontFamily="MV Boli"
+               Canvas.Left="10" Canvas.Top="10" />
+        <Ellipse Width="70" Height="70" Fill="#6A0DAD" Stroke="White" StrokeThickness="3"
+                 Canvas.Left="683" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <TextBlock Text="Trivia" FontSize="20" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Canvas.Left="692" Canvas.Top="10" VerticalAlignment="Top" />
+        <TextBlock Text="Mater?" FontSize="15" Foreground="White" HorizontalAlignment="Left" Canvas.Left="696" Canvas.Top="35" VerticalAlignment="Top" />
+        <TextBlock FontFamily="MV Boli" Text="Room Name:" FontSize="24" Canvas.Left="90" Canvas.Top="131" />
+        <TextBlock FontFamily="MV Boli" FontSize="24" Canvas.Left="90" Canvas.Top="247" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Number Of Players:" />
+        <TextBlock FontFamily="MV Boli" Text="Number Of Questions:" FontSize="24" Canvas.Left="90" Canvas.Top="366" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <TextBlock FontFamily="MV Boli" Text="Time For Question:" FontSize="24" Canvas.Left="90" Canvas.Top="482" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.548,4.935" />
+
+        <TextBox FontFamily="MV Boli" x:Name="RoomaNameBox" Width="221" Height="39" Canvas.Left="354" Canvas.Top="124" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox FontFamily="MV Boli" x:Name="NumberOfPlayersBox" Width="221" Height="39" Canvas.Left="354" Canvas.Top="240" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox FontFamily="MV Boli" x:Name="NumberOfQuestionsBox" Width="221" Height="39" Canvas.Left="354" Canvas.Top="359" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBox FontFamily="MV Boli" x:Name="TimeForQuestionBox" Width="221" Height="39" Canvas.Left="354" Canvas.Top="475" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        <Button FontFamily="MV Boli" Content="Back" Background="Lavender" Foreground="Black"
+                Canvas.Right="20" Canvas.Top="71" Click="Back_Click" Canvas.Left="0" FontSize="24" />
+        <Button FontFamily="MV Boli" Content="Create" Background="Lavender" Foreground="Black" Canvas.Left="412" Canvas.Top="590" FontSize="24" Height="60" Width="104" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Create_Click" RenderTransformOrigin="1.606,0.606"/>
+        <TextBlock x:Name="ErrorMessage" Text="" Foreground="Red" FontSize="16"
+                   Canvas.Left="30" Canvas.Top="320" />
+    </Canvas>
+</Window>

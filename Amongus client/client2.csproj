@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Screens\BestScore-Screen.png" />
+    <None Remove="Screens\CreateRoom-Screen.png" />
+    <None Remove="Screens\False.png" />
+    <None Remove="Screens\JoinRoom-Screen.png" />
+    <None Remove="Screens\Login-Screen.png" />
+    <None Remove="Screens\Menu-Screen.png" />
+    <None Remove="Screens\MyStats-Screen.png" />
+    <None Remove="Screens\SignUp-Screen.png" />
+    <None Remove="Screens\SignUp-Screen.png.jpg" />
+    <None Remove="Screens\True.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Screens\BestScore-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\CreateRoom-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\False.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\JoinRoom-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\Login-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\Menu-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\MyStats-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\SignUp-Screen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Screens\True.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
